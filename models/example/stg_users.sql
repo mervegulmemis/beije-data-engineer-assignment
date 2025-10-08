@@ -5,7 +5,7 @@ select
   _id,
   safe_cast(signup_ts as timestamp) as signup_ts,
   createdAt
-from Raw.users
+from {{ source('Raw','users') }}
 where _id is not null
 
 select * from users
