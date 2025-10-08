@@ -7,5 +7,7 @@ select
   digest(lower(trim(email)), 'sha256') as email_hash,  -- anonimleştirme
   safe_cast(signup_ts as timestamp) as signup_ts,
   ingest_date
-from {{ source('Raw','users') }}
+from Raw.users
 where customer_id is not null
+
+select * from users
