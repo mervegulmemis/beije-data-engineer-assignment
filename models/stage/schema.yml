@@ -1,0 +1,17 @@
+
+version: 2
+
+sources:
+  - name: raw
+    database: beije-data-enginer-assignment
+    schema: Raw   # örn. landing dataset
+    tables:
+      - name: customers
+        freshness:
+          warn_after: {count: 1, period: day}
+          error_after: {count: 7, period: day}
+      - name: addresses
+      - name: subscriptions
+      - name: orders
+      - name: shipments
+    
