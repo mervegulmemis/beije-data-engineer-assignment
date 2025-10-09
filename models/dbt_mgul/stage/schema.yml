@@ -16,4 +16,7 @@ sources:
       - name: shipments
       - name: users
       - name: neighborhoods
+      - name: cities
+      - name: states
+      - name: countries
     
