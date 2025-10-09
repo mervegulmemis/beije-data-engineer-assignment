@@ -10,7 +10,8 @@ clean-targets: ["target", "dbt_packages"]
 
 models:
   dbt_mgul:
-    +materialized: view      
-    stage:                   
-      +materialized: view
+    +materialized: view
+    dbt_mgul:          # --> "models/dbt_mgul/"
+      stage:           # --> "models/dbt_mgul/stage/"
+        +materialized: view
  

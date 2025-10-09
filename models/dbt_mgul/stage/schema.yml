@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: raw
     database: beije-data-enginer-assignment
-    schema: Raw   # örn. landing dataset
+    schema: Raw   # landing dataset bigquery
     tables:
       - name: customers
         freshness:
