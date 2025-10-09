@@ -15,4 +15,5 @@ sources:
       - name: orders
       - name: shipments
       - name: users
+      - name: neighborhoods
     
