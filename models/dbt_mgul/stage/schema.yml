@@ -14,4 +14,5 @@ sources:
       - name: subscriptions
       - name: orders
       - name: shipments
+      - name: users
     
