@@ -36,8 +36,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  beije:
-    +materialized: view   # genel default
-    staging:
-      +materialized: view
+  stage:
+    +materialized: view
     
