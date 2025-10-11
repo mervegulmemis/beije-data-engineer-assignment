@@ -14,4 +14,10 @@ models:
     dbt_mgul:          # --> "models/dbt_mgul/"
       stage:           # --> "models/dbt_mgul/stage/"
         +materialized: view
+        warehouse:
+        +materialized: table
+
+     
+
+        
  
