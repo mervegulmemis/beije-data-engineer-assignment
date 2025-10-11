@@ -11,7 +11,7 @@ select
   SAFE_CAST(_invoiceAddress   AS STRING)    as invoice_address_id,
   SAFE_CAST(price             AS NUMERIC)   as items_total,
   SAFE_CAST(status            AS STRING)    as status,
-  SAFE_CAST(subscriptions     AS STRING)    as subscription,
+  SAFE_CAST(subscriptions     AS STRING)    as subscription_id,
   SAFE_CAST(createdAt         AS TIMESTAMP) as order_ts,
   CAST(createdAt AS DATE)                   as order_date
 from src
